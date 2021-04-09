@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 0;
+}
+
+p {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1{
+    color: #663300;
+}
+.container {
+    width: 1060px;
+    display: flex;
+    margin: 0 auto;
+    background: #eae1d2;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background: #bb4a1b;
+    height: 52px;
+}
+
