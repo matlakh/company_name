@@ -1,5 +1,11 @@
-* {
+*, *::before, *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #eae1d2;
     font-family: 'Merriweather Sans', sans-serif;
     margin: 0;
 }
@@ -8,20 +14,108 @@ p {
     font-family: 'Noto Sans', sans-serif;
 }
 
-h1{
+h1 {
     color: #663300;
+    width: 30%;
+    font-size: 36px;
 }
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .container {
     width: 1060px;
     display: flex;
     margin: 0 auto;
-    background: #eae1d2;
+    justify-content: space-around;
+}
+
+.item-img {
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: auto;
 }
 
 header {
     display: flex;
-    justify-content: space-around;
     background: #bb4a1b;
     height: 52px;
+    align-items: center;
+    text-transform: uppercase;
 }
 
+.header__nav {
+    display: flex;
+    width: 60%;
+    font-size: 14px;
+}
+
+.nav__list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: #ffffff;
+    align-items: center;
+}
+
+.content__list--item a {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    color: rgb(99, 99, 99);
+}
+
+.nav__list--item a:hover {
+    color: #010101;
+}
+
+.content__list--item a:hover {
+    color: rgb(99, 99, 99);
+}
+
+.dropdown-modal, .dropdown-submodal {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown__content, .dropdown__content-sub {
+    position: absolute;
+    background-color: #eae1d2;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 150px;
+    top: 40px;
+}
+
+.dropdown-modal:hover .dropdown__content, .dropdown-submodal:hover .dropdown__content-sub {
+    display: block;
+}
+
+.content__list--item {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding-left: 21px;
+    border-bottom: 1px solid rgb(213, 202, 186);
+}
+
+.content__list--item:hover {
+    background: rgb(158, 158, 158);
+}
+
+.dropdown__content::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #eae1d2;
+    
+}

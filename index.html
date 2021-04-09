@@ -19,17 +19,46 @@
 
 <body>
 
-    
 
-        <header class="header">
-            <div class="container">
+
+    <header class="header">
+        <div class="container">
             <h1 class="logo">
                 Company name
             </h1>
             <nav class="header__nav">
                 <ul class="nav__list">
-                    <li class="nav__list--item">
-                        <a href="#">Home</a>
+                    <li class="nav__list--item dropdown-modal">
+                        <a class='dropdown-href' href="#">Home</a>
+                        <div class="dropdown__content">
+                            <ul class="content__list">
+                                <li class="content__list--item"><a href="#">
+                                        Brushes
+                                    </a></li>
+                                <li class="content__list--item dropdown-submodal">
+                                    <a href="#">
+                                        Textures
+                                        <img class="item-img" src="./img/naw-arrow.png" alt="nav-arrow">
+                                    </a>
+                                  <!--  <div class="dropdown__content-sub">
+                                        <ul class="content-sub__list">
+                                            <li class="content-sub__list--item"><a href="#">Brushes</a></li>
+                                            <li class="content-sub__list--item"><a href="#">Textures</a></li>
+                                            <li class="content-sub__list--item"><a href="#">Icon Sets</a></li>
+                                        </ul>
+                                    </div> -->
+                                </li>
+                                <li class="content__list--item"><a href="#">
+                                        Icon Sets
+                                    </a></li>
+                                <li class="content__list--item"><a href="#">
+                                        Patterns
+                                    </a></li>
+                                <li class="content__list--item"><a href="#">
+                                        Vectors
+                                    </a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="nav__list--item">
                         <a href="#">About Us</a>
@@ -45,7 +74,7 @@
                     </li>
                 </ul>
             </nav>
-        </header>
+    </header>
 
     </div>
 
