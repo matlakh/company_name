@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    const swiper = new Swiper('.swiper-container', {
+    const header_swiper = new Swiper('.header_swiper', {
         loop: true,
         loopedSlides: '1',
         slidesPerView: 1,
@@ -17,11 +17,14 @@ document.addEventListener("DOMContentLoaded", function () {
             prevEl: '.arrow-right',
         },
     });
-    var  = new Swiper('.portfolio__swiper', {
+    const portfolio_swiper = new Swiper('.portfolio_swiper', {
+        loop: true,
         slidesPerView: 4,
-        spaceBetween: 35,
+        spaceBetween: 30,
         pagination: false,
-      });
-
-
+        navigation: {
+            nextEl: '.right-arrow',
+            prevEl: '.left-arrow',
+        },
+    });
 })

@@ -23,62 +23,64 @@
 
     <header class="header">
         <div class="container">
-            <h1 class="logo">
-                Company name
-            </h1>
-            <nav class="header__nav">
-                <ul class="nav__list">
-                    <li class="nav__list--item dropdown-modal">
-                        <a class='dropdown-href' href="#">Home</a>
-                        <div class="dropdown__content">
-                            <ul class="content__list">
-                                <li class="content__list--item"><a href="#">
-                                        Brushes
-                                    </a></li>
-                                <li class="content__list--item dropdown-submodal">
-                                    <a href="#">
-                                        Textures
-                                        <img class="item-img" src="./img/naw-arrow.png" alt="nav-arrow">
-                                    </a>
-                                    <div class="dropdown__content-sub">
-                                        <ul class="content-sub__list">
-                                            <li class="content-sub__list--item"><a href="#">Brushes</a></li>
-                                            <li class="content-sub__list--item"><a href="#">Textures</a></li>
-                                            <li class="content-sub__list--item"><a href="#">Icon Sets</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="content__list--item"><a href="#">
-                                        Icon Sets
-                                    </a></li>
-                                <li class="content__list--item"><a href="#">
-                                        Patterns
-                                    </a></li>
-                                <li class="content__list--item"><a href="#">
-                                        Vectors
-                                    </a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav__list--item">
-                        <a href="#">About Us</a>
-                    </li>
-                    <li class="nav__list--item">
-                        <a href="#">Portfolio</a>
-                    </li>
-                    <li class="nav__list--item">
-                        <a href="#">Latest News</a>
-                    </li>
-                    <li class="nav__list--item">
-                        <a href="#">Contact Us</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="header__wrapper">
+                <h1 class="logo">
+                    Company name
+                </h1>
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__list--item dropdown-modal">
+                            <a class='dropdown-href' href="#">Home</a>
+                            <div class="dropdown__content">
+                                <ul class="content__list">
+                                    <li class="content__list--item"><a href="#">
+                                            Brushes
+                                        </a></li>
+                                    <li class="content__list--item dropdown-submodal">
+                                        <a href="#">
+                                            Textures
+                                            <img class="item-img" src="./img/naw-arrow.png" alt="nav-arrow">
+                                        </a>
+                                        <div class="dropdown__content-sub">
+                                            <ul class="content-sub__list">
+                                                <li class="content-sub__list--item"><a href="#">Brushes</a></li>
+                                                <li class="content-sub__list--item"><a href="#">Textures</a></li>
+                                                <li class="content-sub__list--item"><a href="#">Icon Sets</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="content__list--item"><a href="#">
+                                            Icon Sets
+                                        </a></li>
+                                    <li class="content__list--item"><a href="#">
+                                            Patterns
+                                        </a></li>
+                                    <li class="content__list--item"><a href="#">
+                                            Vectors
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav__list--item">
+                            <a href="#">About Us</a>
+                        </li>
+                        <li class="nav__list--item">
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li class="nav__list--item">
+                            <a href="#">Latest News</a>
+                        </li>
+                        <li class="nav__list--item">
+                            <a href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
     <section class="header-slider">
-        <div class="slider swiper-container">
+        <div class="header_swiper swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="slide-img">
@@ -141,19 +143,74 @@
             <div class="section-title">
                 <h4>Portfolio</h4>
             </div>
-            <div class="portfolio__swiper">
+            <div class="swiper-container portfolio_swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
 
- 
+                    <div class="swiper-slide portfolio__slide">
+                        <div class="slide__wrapper">
+                            <div class="slide__image">
+                                <img src="./img/gallery-img1.png" alt="gallery-img1">
+                            </div>
+                            <div class="slide__hover">
+                                <div class="hover__bg">
+                                    <img src="./img/plus.png" alt="plus">
+                                </div>
+                            </div>
+                            <div class="slide__desc">
+                                <h5>It is a long established fact</h5>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
+                </div>
+            </div>
+
+            <div class="portfolio__navigation">
+                <div class="left-arrow">
+                    <img src="./img/arrow-right.png" alt="">
+                </div>
+                <div class="right-arrow">
+                    <img src="./img/arrow-left.png" alt="">
+                </div>
             </div>
         </div>
     </section>
 
-
+    <section class="about">
+        <div class="container">
+            <div class="section-title about__title">
+                <h4>What is Lorem Ipsum?</h4>
+            </div>
+            <div class="about__card">
+                <div class="card__img">
+                    <div class="image__wrapper">
+                        <img src="./img/bout-img.png" alt="about-img">
+                    </div>
+                    <div class="image__desc">
+                        <h5>
+                            There are many variations
+                        </h5>
+                    </div>
+                </div>
+                <div class="card__content">
+                    <div class="content__title">
+                        Why do we use it?
+                    </div>
+                    <div class="content__text">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                        classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
+                        Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin
+                        words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in
+                        classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32
+                        and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,
+                        written in 45 BC. This book is a treatise on the theory of ethics, very popular during the
+                        Renaissance.</br>
+                        The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
