@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         },
         navigation: {
-            nextEl: '.right',
-            prevEl: '.left',
+            nextEl: '.arrow-right',
+            prevEl: '.arrow-left',
         },
 
 
