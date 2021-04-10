@@ -9,13 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         pagination: {
             el: '.swiper-pagination',
-            type: 'fraction',
-            renderFraction: function (currentClass, totalClass) {
-                return '<div class="pagination">' +
-                    '<span class="' + currentClass + '"></span>' +
-                    '<img src="img/line.svg">' +
-                    '<span class="' + totalClass + '"></span>' + '</div>';
-            }
+            type: 'bullets',
+            clickable: true,
         },
         navigation: {
             nextEl: '.arrow-right',

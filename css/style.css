@@ -152,10 +152,12 @@ header {
     z-index: 99;
     padding: 0 25px;
 }
-.swiper-slide{
+
+.swiper-slide {
     display: flex;
     align-items: center;
 }
+
 .slide-img {
     position: absolute;
     z-index: -1;
@@ -180,7 +182,7 @@ header {
     line-height: 36px;
 }
 
-.arrow-right, .arrow-left{
+.arrow-right, .arrow-left {
     position: absolute;
     z-index: 20;
     top: 50%;
@@ -196,14 +198,26 @@ header {
     margin: 0 auto;
 }
 
-.arrow-left{
+.arrow-right:hover, .arrow-left:hover {
+    background: rgba(19, 19, 19, 0.6);
+}
+
+.arrow-left {
     right: 5%;
 }
-.arrow-right{
+
+.arrow-right {
     left: 5%;
 }
 
-.arrow-right img, 
-.arrow-left img{
+.arrow-right img, .arrow-left img {
     margin: 0 auto;
-} 
+}
+
+.swiper-pagination-bullet {
+    height: 10px;
+    width: 40px;
+    border-radius: 0;
+    border: 1px solid #ac4418;
+    background: rgba(172, 68, 24, 0.8);
+}
