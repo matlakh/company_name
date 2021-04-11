@@ -428,6 +428,7 @@ header {
     padding: 20px 10px;
     display: flex;
     background: #f0eae0;
+    align-items: center;
 }
 
 .about__title {
@@ -439,21 +440,42 @@ header {
     color: #ffffff;
     font-size: 14px;
     line-height: 32px;
+    position: absolute;
+    bottom: 15px;
+    width: 230px;
+    height: 35px;
+    background: rgba(95, 59, 55, 0.4);
+
 }
-.card__content{
+
+.image__wrapper img {
+    height: 270px;
+}
+
+.card__content {
+    margin-left: 20px;
     background: #f0eae0;
 }
-.content__title{
+
+.card__img {
+    position: relative;
+}
+
+.image__desc h5 {
+    margin-left: 15px;
+}
+
+.content__title {
     color: #666666;
     font-size: 14px;
     line-height: 32px;
     text-transform: uppercase;
+    margin-bottom: 0;
 }
 
-.content__text{
+.content__text {
     color: #888888;
     font-size: 14px;
     line-height: 32px;
     font-family: 'Noto Sans', sans-serif;
 }
-
