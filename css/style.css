@@ -501,13 +501,17 @@ header {
 
 .footer__wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
     height: auto;
 }
 
-.footer__nav, .footer__contact {
-    width: 30%;
+.footer__nav{
+    width: 20%;
+}
+.footer__contact {
+    width: 40%;
 }
 
 .footer__nav h3 {
@@ -601,7 +605,6 @@ form .submit {
     color: #fdfefe;
     text-transform: uppercase;
     border-radius: 5px;
-    align-self: center;
 }
 
 form .submit:hover {
