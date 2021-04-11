@@ -17,14 +17,55 @@ document.addEventListener("DOMContentLoaded", function () {
             prevEl: '.arrow-right',
         },
     });
-    const portfolio_swiper = new Swiper('.portfolio_swiper', {
-        loop: true,
-        slidesPerView: 4,
-        spaceBetween: 30,
-        pagination: false,
-        navigation: {
-            nextEl: '.right-arrow',
-            prevEl: '.left-arrow',
-        },
-    });
+
+
+    if(window.innerWidth >= 1100){
+        const portfolio_swiper = new Swiper('.portfolio_swiper', {
+            loop: true,
+            slidesPerView: 4,
+            spaceBetween: 30,
+            pagination: false,
+            navigation: {
+                nextEl: '.right-arrow',
+                prevEl: '.left-arrow',
+            },
+        });
+    } 
+    if(window.innerWidth <= 1100){
+        const portfolio_swiper = new Swiper('.portfolio_swiper', {
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 10,
+            pagination: false,
+            navigation: {
+                nextEl: '.right-arrow',
+                prevEl: '.left-arrow',
+            },
+        });
+    }
+
+    if(window.innerWidth <= 1060){
+        const portfolio_swiper = new Swiper('.portfolio_swiper', {
+            loop: true,
+            slidesPerView: 2,
+            spaceBetween: 10,
+            pagination: false,
+            navigation: {
+                nextEl: '.right-arrow',
+                prevEl: '.left-arrow',
+            },
+        });
+    }
+    if(window.innerWidth <= 612){
+        const portfolio_swiper = new Swiper('.portfolio_swiper', {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: false,
+            navigation: {
+                nextEl: '.right-arrow',
+                prevEl: '.left-arrow',
+            },
+        });
+    }
 })
